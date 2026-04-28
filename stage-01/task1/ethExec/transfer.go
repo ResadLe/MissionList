@@ -143,7 +143,7 @@ func RunTransfer(ctx context.Context, client *ethclient.Client, amountEth string
 	fmt.Println("=== Transaction Sent ===")
 	fmt.Printf("From       : %s\n", senderAddress.Hex())
 	fmt.Printf("To         : %s\n", toAddr.Hex())
-	fmt.Printf("Value      : %s ETH (%s Wei)\n", fmt.Sprintf("%.6f", amountEth), valueWei.String())
+	fmt.Printf("Value      : %s ETH (%s Wei)\n", amountEth, valueWei.String())
 	fmt.Printf("Gas Limit  : %d\n", gasLimit)
 	fmt.Printf("Gas Tip Cap: %s Wei\n", gasTipCap.String())
 	fmt.Printf("Gas Fee Cap: %s Wei\n", gasFeeCap.String())
